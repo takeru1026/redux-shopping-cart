@@ -4,6 +4,7 @@ import CartContainer from './components/CartContainer';
 import Navbar from './components/Navbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { calculateTotal } from './features/cart/CartSlice';
+import Modal from './components/Modal';
 
 function App() {
 	const { cartItems } = useSelector((state) => state.cart);
@@ -13,6 +14,7 @@ function App() {
 	}, [cartItems]);
 	return (
 		<main>
+			<Modal />
 			<Navbar />
 			<CartContainer />
 		</main>
