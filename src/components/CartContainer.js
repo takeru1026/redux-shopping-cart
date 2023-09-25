@@ -33,10 +33,7 @@ const CartContainer = () => {
 						合計 <span>{total}円</span>
 					</h4>
 				</div>
-				<button
-					className="btn clear-btn"
-					onClick={() => dispatch(dispatch(openModal(true)))}
-				>
+				<button className="btn clear-btn" onClick={() => dispatch(openModal())}>
 					全削除
 				</button>
 			</footer>
